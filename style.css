@@ -1,0 +1,112 @@
+/* Structure */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    display: flex;
+    flex: 1 1 auto;
+}
+/* Mise en forme */
+body {
+    margin: 0;
+}
+
+/* image du fond image 100%  de la page et reductuon meme temps que le site*/
+.header_fond {
+    height:100%;
+    width:100%;
+
+}
+/*image logo  image position en haut en gauche */
+.header_logo  {
+    position: absolute;
+    top: 0%; left: 0%;   
+}
+
+/* texte en centre*/
+.article_annonce, .article_bouton, .article_menu  {
+    text-align: center;
+    
+    
+}
+/*bouton couleur bordure et largeur */
+.article_bouton {
+    background-color: orangered;
+    border-radius: 20px;
+    width: 150px;
+    margin-bottom: 20px;    
+}
+
+.article_bouton:hover {
+    background-color: white;
+}
+
+
+/* balise footer couleur de fond*/
+footer {
+    background-color: rgb(100, 129, 97);
+}
+/* balise header h1 et footer p texte center*/
+header h1, footer p {
+    text-align: center;
+}
+/* balse aside et nav 50px largeur*/
+aside, nav {
+    width: 50em;
+}
+
+/*balise aside couleur de fond */
+aside {
+    background-color: rgb(178, 179, 245);
+}
+/*balise nav couleur de fond*/
+nav {
+    background-color: lightblue;
+}
+
+/* balise aside nav article */
+aside, nav, article {
+    padding: 10px;
+}
+/*nav ul margin 0 padding 0 pas espace  list-style retire les points texte centre*/
+nav ul, .article_menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+/*balise nav a  (color) texte en couleur noir et text-decoration efface la ligne en bas*/
+nav a,  {
+    text-decoration: none;
+    color: black;   
+}
+
+/*navigation  changement de couleur white quand la souris est dessus et bordure de 10px */
+nav li:hover{
+    background-color: white;
+    border-radius: 10px;
+}
+/* Responsive Design */
+@media (max-width: 640px) {
+    main {
+        flex-direction: column;
+    }
+    aside, nav {
+        width: auto;
+    }
+    nav {
+        order: -1;
+    }
+    .header_logo {
+         height: 100px;
+         width: 100px;
+    }
+    nav {
+        text-align: center;
+    }
+
+}
+
